@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>PlasticPerserij — mobiele recycleworkshops</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<meta content="PlasticPerserij bouwt aan mobiele recycleworkshops waarin kinderen hun eigen plastic verwerken tot iets nieuws." name="description"/>
+<style>
+:root{--navy:#111111;--purple:#1976d2;--purple2:#43a7e8;--yellow:#ffd54a;--sky:#eef8ff;--lilac:#f2f7fb;--pink:#f7f3ee;--cream:#fff9df;--muted:#62666d;--line:#e7e9ec;--white:#fff;--shadow:0 18px 45px rgba(39,35,94,.10);--r:30px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--navy);font-family:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:#77749a}.accent{color:var(--purple)}
+header{height:104px;display:flex;align-items:center}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:24px;line-height:.82;font-weight:1000;letter-spacing:-.055em;text-decoration:none}.logo span{display:block}.nav{display:flex;align-items:center;gap:8px;padding:7px;border:1px solid var(--line);border-radius:999px;box-shadow:0 7px 25px rgba(42,39,91,.05)}.nav a{font-size:13px;font-weight:750;text-decoration:none;padding:10px 16px;border-radius:999px}.nav a:first-child{background:var(--purple);color:#fff}.status{font-size:13px;font-weight:850;color:#fff;text-decoration:none;padding:14px 20px;border-radius:999px;background:linear-gradient(135deg,var(--purple),#39a6df);box-shadow:0 12px 28px rgba(25,118,210,.20)}
+.hero{padding:86px 0 132px}.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.hero h1{font-size:clamp(62px,7.2vw,102px);line-height:.86;letter-spacing:-.075em;margin:18px 0 30px;max-width:650px}.hero p{font-size:18px;line-height:1.55;max-width:530px;margin:0;color:#3e3e5c}.button{display:inline-flex;align-items:center;gap:14px;margin-top:34px;padding:15px 22px;border-radius:999px;background:linear-gradient(135deg,var(--purple),#39a6df);color:#fff;text-decoration:none;font-size:14px;font-weight:850;box-shadow:0 14px 30px rgba(25,118,210,.20)}.button span{font-size:19px}.visual{position:relative;min-height:550px;display:grid;place-items:center}.hero .blob{display:block}.blob{position:absolute;border-radius:44% 56% 53% 47% / 55% 42% 58% 45%;filter:saturate(.95)}.blob.purple{width:70%;height:75%;left:4%;top:5%;background:#198fd1;transform:rotate(-8deg)}.blob.yellow{width:68%;height:67%;right:0;bottom:3%;background:#ffe37d;transform:rotate(12deg)}.photo{position:relative;overflow:hidden;background:#f2f2f7;box-shadow:var(--shadow)}.photo img{width:100%;height:100%;display:block;object-fit:cover}.photo.contain img{object-fit:contain;background:#f7f8fb;padding:22px}.hero-photo{z-index:2;width:112%;aspect-ratio:1.12/1;border-radius:0;transform:translate(1%,2%);background:transparent;box-shadow:none;overflow:visible}.hero-photo img{object-fit:contain;object-position:center;transform:scale(1.03);filter:drop-shadow(0 30px 26px rgba(22,38,72,.16))}.hero .blob.purple{width:68%;height:66%;left:3%;top:8%;background:#168ed2;transform:rotate(-10deg);border-radius:48% 52% 44% 56% / 58% 40% 60% 42%;opacity:.98}.hero .blob.yellow{width:58%;height:55%;right:1%;bottom:6%;background:#ffd84d;transform:rotate(13deg);border-radius:53% 47% 61% 39% / 43% 57% 43% 57%;opacity:.9}.hero .scribble{right:-1%;bottom:4%;font-size:15px;color:#171650;background:rgba(255,255,255,.94);padding:15px 18px;border-radius:20px;transform:rotate(-4deg)}.hero .f1{left:-1%;bottom:20%;background:#22bdd1}.hero .f2{right:7%;top:7%;background:#ffbd00}.hero .f3{right:0;top:35%;background:#168ed2}.hero .scribble{display:block}.scribble{position:absolute;z-index:3;font-weight:950;color:var(--purple);font-size:16px;line-height:1.15;transform:rotate(-5deg);right:0;bottom:10%;background:rgba(255,255,255,.9);padding:18px 20px;border-radius:24px;box-shadow:var(--shadow)}.hero .flake{display:block}.flake{position:absolute;z-index:4;width:38px;height:24px;border-radius:60% 40% 55% 45%;box-shadow:0 8px 18px rgba(0,0,0,.1)}.f1{left:2%;bottom:17%;background:#20c4da;transform:rotate(22deg)}.f2{right:7%;top:5%;background:#f5b900;transform:rotate(-15deg);width:34px;height:34px}.f3{right:1%;top:38%;background:#1769aa;transform:rotate(38deg)}
+.benefits{padding:0 0 140px}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:72px}.benefit{display:flex;align-items:center;gap:20px}.icon{width:66px;height:66px;border-radius:22px;display:grid;place-items:center;font-size:28px;flex:0 0 auto}.benefit:nth-child(1) .icon{background:#bdf1d7}.benefit:nth-child(2) .icon{background:#ded5ff}.benefit:nth-child(3) .icon{background:#ffe68e}.benefit b{font-size:17px;line-height:1.25}
+.process-band{position:relative;background:linear-gradient(180deg,#eff9ff,#e9f6ff);padding:112px 0 132px;overflow:hidden}.process-band:before,.process-band:after{content:"";position:absolute;left:-5%;width:110%;height:85px;background:#fff;border-radius:50%}.process-band:before{top:-48px}.process-band:after{bottom:-53px}.section-title{font-size:clamp(46px,5.5vw,76px);line-height:.9;letter-spacing:-.065em;margin:17px 0 50px}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.step{position:relative;min-height:290px;background:rgba(255,255,255,.9);border-radius:28px;padding:24px 20px 25px;text-align:center;box-shadow:0 14px 32px rgba(43,58,102,.06);display:flex;flex-direction:column;align-items:center}.num{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;font-size:12px;font-weight:950;background:#72caff}.step:nth-child(2) .num{background:#ffd84d}.step:nth-child(3) .num{background:#ff89be}.step:nth-child(4) .num{background:#ad9cff}.step:nth-child(5) .num{background:#7fe1a9}.step-visual{height:105px;width:100%;display:grid;place-items:center;font-size:58px}.step h3{font-size:18px;margin:5px 0 8px}.step p{font-size:13px;line-height:1.45;color:#74748b;margin:0}.step:not(:last-child):after{content:"→";position:absolute;z-index:2;right:-26px;top:47%;font-size:28px;color:var(--purple);font-weight:900}
+.machines{padding:160px 0 145px}.machine-feature{display:grid;grid-template-columns:1.15fr .85fr;gap:78px;align-items:center}.machine-photo{height:520px;border-radius:38px}.machine-photo img{object-position:center 42%}.machine-copy h2,.school-copy h2,.progress-copy h2{font-size:clamp(50px,5.8vw,78px);line-height:.91;letter-spacing:-.065em;margin:18px 0 25px}.machine-copy p,.school-copy p,.progress-copy p{font-size:17px;line-height:1.55;color:#51516c;max-width:490px}.mini-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}.mini-photo{height:210px;border-radius:28px}.mini-photo:nth-child(2){background:linear-gradient(145deg,#e8e5f5,#d8d2ef)}.mini-photo:nth-child(3){background:linear-gradient(145deg,#fff1d5,#f6dfb3)}
+.school{position:relative;background:linear-gradient(135deg,#fff5fa,#f7efff);padding:135px 0 150px;overflow:hidden}.school:before,.school:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(2px);opacity:.55}.school:before{background:#ffddec;left:-240px;top:-130px}.school:after{background:#e5d9ff;right:-200px;bottom:-200px}.school-grid{position:relative;z-index:1;display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}.ticks{display:grid;gap:13px;margin-top:28px}.tick{display:flex;gap:11px;align-items:flex-start;color:#5d5b76;font-size:15px}.tick i{font-style:normal;width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:var(--purple);color:#fff;font-size:12px;flex:0 0 auto}.school-photo{height:520px;border-radius:42% 34% 44% 30% / 36% 42% 35% 46%;background:#edf0f5}.school-photo img{object-position:44% center}
+.progress{position:relative;background:linear-gradient(135deg,#fff8d9,#fffdf2);padding:135px 0 125px;overflow:hidden}.progress-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}.van{position:relative;height:420px}.van .photo{position:absolute;width:88%;height:88%;left:0;bottom:0;border-radius:80px 80px 45px 45px;background:#edf0f5}.van .photo img{object-position:center center}.van:after{content:"";position:absolute;width:90%;height:70px;left:-7%;bottom:-15px;background:#168ac7;border-radius:50%;z-index:0}.van .photo{z-index:1}.progress-copy .button{background:#fff;color:var(--navy);box-shadow:0 12px 30px rgba(54,46,70,.09)}
+footer{padding:52px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.footer-links{display:flex;gap:30px;font-size:13px}.footer-links a{text-decoration:none}.small{font-size:12px;color:#8a899c}
+@media(max-width:900px){.wrap{width:min(100% - 30px,680px)}header{height:86px}.nav{display:none}.status{font-size:11px;padding:12px 15px}.hero{padding:65px 0 95px}.hero-grid,.machine-feature,.school-grid,.progress-grid{grid-template-columns:1fr;gap:60px}.hero h1{font-size:clamp(60px,18vw,88px)}.visual{min-height:470px}.hero-photo{width:92%;max-width:620px}.benefits{padding-bottom:100px}.benefit-grid{grid-template-columns:1fr;gap:26px}.process-band{padding:95px 0 110px}.steps{grid-template-columns:1fr;gap:16px}.step{min-height:190px}.step-visual{height:70px}.step:not(:last-child):after{content:"↓";right:auto;top:auto;bottom:-25px}.machines{padding:120px 0 110px}.machine-photo{height:400px}.mini-gallery{grid-template-columns:1fr}.mini-photo{height:260px}.school{padding:110px 0}.school-photo{height:400px}.progress{padding:105px 0}.van{height:320px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:16px 24px}}
+
+/* --- Showcase motion layer --- */
+@keyframes floaty{0%,100%{transform:translate3d(0,0,0) rotate(-2deg)}50%{transform:translate3d(0,-16px,0) rotate(2deg)}}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(18px,-10px) rotate(7deg)}}
+@keyframes pulseRing{0%,100%{box-shadow:0 0 0 0 rgba(0,121,255,.20)}50%{box-shadow:0 0 0 16px rgba(0,121,255,0)}}
+@keyframes arrowNudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+@keyframes shine{0%{transform:translateX(-150%) rotate(18deg)}55%,100%{transform:translateX(280%) rotate(18deg)}}
+@keyframes flakeSpin{to{transform:rotate(360deg)}}
+body{overflow-x:hidden}
+header{transition:background .3s ease,box-shadow .3s ease,transform .3s ease}header.scrolled{background:rgba(255,255,255,.88);backdrop-filter:blur(18px);box-shadow:0 8px 30px rgba(19,25,65,.07)}
+.hero h1,.hero p,.hero .eyebrow,.hero .button{opacity:0;transform:translateY(24px);animation:heroIn .8s cubic-bezier(.2,.8,.2,1) forwards}.hero h1{animation-delay:.08s}.hero p{animation-delay:.16s}.hero .button{animation-delay:.24s}@keyframes heroIn{to{opacity:1;transform:none}}
+.visual .photo{animation:floaty 7s ease-in-out infinite;will-change:transform}.visual .blob{animation:drift 9s ease-in-out infinite}.visual .blob.yellow{animation-delay:-4s}.flake{animation:flakeSpin 12s linear infinite}.flake:nth-child(even){animation-direction:reverse;animation-duration:16s}
+.button{position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}.button:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(25,83,170,.18)}.button span{display:inline-block;animation:arrowNudge 1.6s ease-in-out infinite}
+.step,.benefit,.machine-card,.school-card,.progress-visual,.progress-copy,.photo{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease}.step:hover,.benefit:hover,.machine-card:hover,.school-card:hover{transform:translateY(-9px) rotate(-.5deg);box-shadow:0 22px 48px rgba(43,58,102,.12)}
+.step .num{animation:pulseRing 2.8s ease-in-out infinite}.step:nth-child(2) .num{animation-delay:.25s}.step:nth-child(3) .num{animation-delay:.5s}.step:nth-child(4) .num{animation-delay:.75s}.step:nth-child(5) .num{animation-delay:1s}
+.reveal{opacity:0;transform:translateY(42px) scale(.985);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.reveal.in{opacity:1;transform:none}.reveal-delay-1{transition-delay:.08s}.reveal-delay-2{transition-delay:.16s}.reveal-delay-3{transition-delay:.24s}.reveal-delay-4{transition-delay:.32s}
+.photo img{transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .4s ease}.photo:hover img{transform:scale(1.045)}
+.process-band:before,.process-band:after{transition:transform .2s linear}.process-band.motion:before{transform:translateX(var(--wave-x,0px))}.process-band.motion:after{transform:translateX(calc(var(--wave-x,0px) * -1))}
+.cursor-dot{position:fixed;z-index:9999;width:12px;height:12px;border-radius:50%;background:#ffd84d;pointer-events:none;transform:translate(-50%,-50%);mix-blend-mode:multiply;transition:width .2s,height .2s,opacity .2s}.cursor-dot.big{width:34px;height:34px;opacity:.45}
+@media (pointer:coarse),(max-width:700px){.cursor-dot{display:none}.visual .photo{animation-duration:9s}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}.reveal{opacity:1;transform:none}.cursor-dot{display:none}}
+
+
+/* Feedback pass: sticky navigation + supplied brand logo */
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.logo-image{display:flex;align-items:center;width:172px;height:66px;overflow:hidden}
+.logo-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:left center}
+.footer-logo{width:150px;height:64px}
+@media(max-width:900px){.logo-image{width:138px;height:56px}.footer-logo{width:145px}}
+
+/* Header + process icon refinement */
+header{height:116px}
+.logo-image{width:260px;height:94px}
+.contact-cta{background:#ffb51b!important;color:#171650!important;box-shadow:0 12px 28px rgba(255,181,27,.24)!important;display:flex;align-items:center;gap:10px}
+.contact-cta:hover{transform:translateY(-2px);background:#ffc238!important}
+.contact-cta span{font-size:17px}
+.step-visual svg{width:72px;height:72px;fill:none;stroke:#171650;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.step:nth-child(1) .step-visual svg{stroke:#2587d8}.step:nth-child(2) .step-visual svg{stroke:#d99b00}.step:nth-child(3) .step-visual svg{stroke:#dc5e98}.step:nth-child(4) .step-visual svg{stroke:#6557df}.step:nth-child(5) .step-visual svg{stroke:#248b60}
+@media(max-width:900px){header{height:96px}.logo-image{width:190px;height:72px}.contact-cta{padding:12px 16px}.nav a{padding:9px 11px}}
+@media(max-width:680px){.logo-image{width:170px;height:66px}.nav{display:none}.contact-cta span{display:none}}
+</style>
+<style>
+/* v3 feedback pass */
+.button::before,.button::after{animation:none!important;display:none!important;content:none!important}
+.hero .scribble{display:none!important}
+.machines .machine-photo img{object-fit:cover;object-position:center 42%}
+.school-photo img{object-fit:cover;object-position:center center}
+.progress .van .photo img{object-fit:cover;object-position:center center}
+@media(max-width:900px){
+  .machines .machine-photo img{object-position:center center}
+  .school-photo img{object-position:58% center}
+  .progress .van .photo img{object-position:center center}
+}
+
+/* Header + process icon refinement */
+header{height:116px}
+.logo-image{width:260px;height:94px}
+.contact-cta{background:#ffb51b!important;color:#171650!important;box-shadow:0 12px 28px rgba(255,181,27,.24)!important;display:flex;align-items:center;gap:10px}
+.contact-cta:hover{transform:translateY(-2px);background:#ffc238!important}
+.contact-cta span{font-size:17px}
+.step-visual svg{width:72px;height:72px;fill:none;stroke:#171650;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.step:nth-child(1) .step-visual svg{stroke:#2587d8}.step:nth-child(2) .step-visual svg{stroke:#d99b00}.step:nth-child(3) .step-visual svg{stroke:#dc5e98}.step:nth-child(4) .step-visual svg{stroke:#6557df}.step:nth-child(5) .step-visual svg{stroke:#248b60}
+@media(max-width:900px){header{height:96px}.logo-image{width:190px;height:72px}.contact-cta{padding:12px 16px}.nav a{padding:9px 11px}}
+@media(max-width:680px){.logo-image{width:170px;height:66px}.nav{display:none}.contact-cta span{display:none}}
+</style><style>
+/* v5 — user feedback */
+header{height:126px}
+.logo-image{width:500px;height:112px;flex:0 1 500px}
+.logo-image img{width:100%;height:100%;object-fit:contain;object-position:left center}
+.header-inner{gap:18px}
+.nav{flex-shrink:0}
+.contact-cta{flex-shrink:0}
+.step-visual svg{width:88px;height:88px;overflow:visible}
+.step-visual .icon-stroke{fill:none;stroke:#111;stroke-width:4.4;stroke-linecap:round;stroke-linejoin:round}
+.step:nth-child(1) .step-visual svg{color:#1976d2}
+.step:nth-child(2) .step-visual .drop{fill:#72caff;stroke:#1976d2}
+.step:nth-child(3) .step-visual path:nth-last-child(-n+5){fill:#ff89be;stroke:#111}
+.step:nth-child(5) .step-visual path:first-child{fill:#ffe37d}
+.zoomable-image{cursor:zoom-in}
+.lightbox{position:fixed;inset:0;z-index:3000;background:rgba(10,13,25,.84);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:42px;opacity:0;visibility:hidden;transition:opacity .22s ease,visibility .22s ease}
+.lightbox.open{opacity:1;visibility:visible}
+.lightbox img{display:block;max-width:min(92vw,1500px);max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:24px;box-shadow:0 30px 90px rgba(0,0,0,.38);transform:scale(.94);transition:transform .24s cubic-bezier(.2,.8,.2,1)}
+.lightbox.open img{transform:scale(1)}
+.lightbox-close{position:fixed;top:24px;right:28px;width:52px;height:52px;border:0;border-radius:50%;background:#fff;color:#111;font:400 36px/1 Arial,sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.dev-disclaimer{position:fixed;z-index:1200;right:22px;bottom:22px;display:flex;align-items:center;gap:9px;padding:11px 16px;border-radius:999px;background:rgba(255,249,223,.94);border:1px solid rgba(17,17,17,.09);box-shadow:0 12px 32px rgba(17,17,17,.12);backdrop-filter:blur(12px);font-size:12px;font-weight:800;letter-spacing:.01em;color:#111;pointer-events:none}
+.dev-dot{width:8px;height:8px;border-radius:50%;background:#f4a51c;box-shadow:0 0 0 4px rgba(244,165,28,.14)}
+@media(max-width:1050px){.logo-image{width:390px;height:104px;flex-basis:390px}.nav a{padding:9px 12px}}
+@media(max-width:900px){header{height:100px}.logo-image{width:300px;height:88px;flex-basis:300px}.dev-disclaimer{right:14px;bottom:14px}.lightbox{padding:18px}.lightbox img{border-radius:16px}}
+@media(max-width:680px){.logo-image{width:250px;height:82px;flex-basis:250px}.contact-cta{padding:12px 15px}.dev-disclaimer{font-size:10px;padding:9px 12px}.lightbox-close{top:14px;right:14px;width:44px;height:44px;font-size:30px}}
+</style><style>
+/* v6 — content + spacing refinement */
+.header-inner{position:relative;justify-content:space-between}
+.nav{position:absolute;left:50%;transform:translateX(-50%)}
+.hero{padding-bottom:42px}
+.machines{padding-top:78px}
+.machine-copy .ticks{margin-top:30px}
+.school{margin-top:0;padding-top:145px}
+.process-band{margin-bottom:0}
+.process-band + .school{margin-top:-1px}
+.cursor-dot{display:none!important}
+.contact-section{padding:120px 0;background:#fff}
+.contact-inner{background:#111;color:#fff;border-radius:42px;padding:58px 64px;display:flex;align-items:center;justify-content:space-between;gap:50px}
+.contact-inner h2{font-size:clamp(44px,5vw,72px);line-height:.95;letter-spacing:-.055em;margin:14px 0 18px}
+.contact-inner p{max-width:650px;margin:0;color:rgba(255,255,255,.72);font-size:17px;line-height:1.6}
+.contact-inner .eyebrow{color:#ffd54a}
+.contact-big{flex:0 0 auto;display:inline-flex;align-items:center;gap:12px;background:#ffb51b;color:#111;text-decoration:none;font-weight:900;padding:18px 24px;border-radius:999px;transition:transform .2s ease,background .2s ease}
+.contact-big:hover{transform:translateY(-3px);background:#ffc238}
+@media(max-width:1050px){.nav{position:static;transform:none}.header-inner{justify-content:space-between}.machines{padding-top:60px}}
+@media(max-width:900px){.hero{padding-bottom:25px}.machines{padding-top:55px}.contact-section{padding:85px 0}.contact-inner{padding:42px 30px;align-items:flex-start;flex-direction:column}.school{padding-top:110px}}
+</style><style>
+/* v7 refinements */
+.process-band:after{display:none!important}.process-band{padding-bottom:105px!important}.school{margin-top:0!important;padding-top:105px!important}
+.workshop-info{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.workshop-pill{padding:18px;border-radius:20px;background:#f4f9ff;border:1px solid #dceeff}.workshop-pill strong,.workshop-pill span{display:block}.workshop-pill strong{font-size:14px;margin-bottom:6px}.workshop-pill span{font-size:12px;line-height:1.45;color:#666b75}
+.factory-box{margin-top:28px;padding:24px;border-radius:28px;background:#111;color:#fff}.factory-intro{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}.factory-intro strong{font-size:22px}.factory-intro span{font-size:12px;opacity:.7}.factory-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.factory-grid>div{padding:15px;border-radius:16px;background:rgba(255,255,255,.09)}.factory-grid b,.factory-grid span{display:block}.factory-grid b{color:#ffd54a;margin-bottom:5px}.factory-grid span,.secondary-note{font-size:12px;line-height:1.45;opacity:.82}.secondary-note{margin:16px 0 0!important;color:#fff!important;max-width:none!important}
+.step .num{display:none!important}.step-visual svg{width:86px;height:86px}.step:nth-child(1) .step-visual svg{filter:drop-shadow(0 8px 12px rgba(25,118,210,.16))}.step:nth-child(4) .step-visual{background:#fff3c4;border-radius:24px;width:110px;margin:0 auto 4px}.step:nth-child(1) .step-visual{background:#e9f6ff;border-radius:24px;width:110px;margin:0 auto 4px}
+.contact-section{padding:110px 0;background:#fff}.contact-inner{display:grid!important;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start!important}.contact-copy h2{font-size:clamp(44px,5vw,68px);letter-spacing:-.055em;line-height:.95;margin:16px 0 22px}.contact-copy p{color:#5b5d68;line-height:1.6}.contact-form{display:grid;gap:14px;padding:28px;border-radius:30px;background:#f5f9fd}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-form label{font-size:12px;font-weight:800;display:grid;gap:7px}.contact-form input,.contact-form textarea{width:100%;border:1px solid #dce3ea;border-radius:14px;background:#fff;padding:14px 15px;font:inherit;font-size:14px;outline:none}.contact-form input:focus,.contact-form textarea:focus{border-color:#1976d2;box-shadow:0 0 0 3px rgba(25,118,210,.1)}.contact-submit{justify-self:start;border:0;border-radius:999px;padding:15px 21px;background:#ffd54a;color:#111;font:inherit;font-weight:900;cursor:pointer}.contact-form small{color:#7b7f87}
+@media(max-width:900px){.workshop-info,.factory-grid,.field-row,.contact-inner{grid-template-columns:1fr}.contact-inner{gap:38px}.factory-intro{display:block}.factory-intro span{display:block;margin-top:6px}.school{padding-top:80px!important}}
+</style><style>
+/* v8 refinements */
+.workshop-info,.factory-box{display:none!important}
+.machine-bullets{margin-top:30px;display:grid;gap:13px;max-width:720px}
+.machine-bullet{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;color:#555b66;font-size:14px;line-height:1.5}
+.machine-bullet .check{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e8f7ef;color:#18864b;font-weight:900;font-size:13px;margin-top:1px}
+.machine-bullet strong{color:#111;font-size:14px}
+.step .step-visual{background:transparent!important;border-radius:0!important;width:auto!important}
+.step-visual .bottle-label{fill:#52b788;stroke:#52b788;stroke-width:2}
+.step-visual .mold-fill{fill:#7657e8;stroke:#7657e8;stroke-width:2}
+.step-visual .flake{fill:#43a7e8;stroke:#1976d2;stroke-width:2}
+.contact-section{display:block!important;visibility:visible!important;opacity:1!important;background:#fff!important;padding:105px 0!important}
+.contact-inner{display:grid!important;grid-template-columns:.8fr 1.2fr!important;gap:70px!important;align-items:start!important;background:#f5f9fd!important;color:#111!important;border-radius:38px!important;padding:48px!important;opacity:1!important;transform:none!important}
+.contact-copy p{color:#5b5d68!important}.contact-form{background:#fff!important;border:1px solid #e1eaf2!important;box-shadow:0 18px 45px rgba(39,35,94,.07)!important}
+@media(max-width:900px){.contact-inner{grid-template-columns:1fr!important;padding:28px!important;gap:30px!important}}
+
+/* v9 refinements */
+.hero .button{background:linear-gradient(135deg,#ffd54a 0%,#ffc943 55%,#ffb83e 100%);color:#111;box-shadow:0 14px 30px rgba(235,166,20,.20)}
+.hero .button:hover{box-shadow:0 16px 34px rgba(235,166,20,.26)}
+.button span,.contact-cta span,.contact-submit span{font-weight:950;line-height:1;display:inline-block}
+.contact-cta span{margin-left:5px}
+.contact-submit span{margin-left:7px;animation:arrowNudge 1.6s ease-in-out infinite}
+.step:not(:last-child):after{content:"➜";font-size:24px;font-weight:950}
+.step-visual .flake{animation:none!important;transform:none!important;will-change:auto!important}
+</style><link href="https://plasticperserij.com/" rel="canonical"/></head>
+<body>
+<header><div class="wrap header-inner"><a class="logo logo-image" href="#top"><img alt="De Plastic Perserij" decoding="async" loading="lazy" src="images/logo.png"/></a><nav class="nav"><a href="#top">Home</a><a href="#proces">Hoe het werkt</a><a href="#achtergrond">Achtergrond</a></nav><a class="status contact-cta" href="#contact">Contact <span>➜</span></a></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><h1>Oud plastic, <span class="accent">Jonge makers.</span></h1><p>Leer alles over plastic recyclen bij jou op locatie. Tover je eigen plastic afval om tot iets nieuws in de mobiele fabriek van De PlasticPerserij.</p><a class="button" href="#contact">Workshop inplannen? <span>➜</span></a></div><div class="visual"><div class="blob purple"></div><div class="blob yellow"></div><div class="photo hero-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" fetchpriority="high" loading="eager" role="button" src="images/hero.webp" tabindex="0"/></div><i class="flake f1"></i><i class="flake f2"></i><i class="flake f3"></i></div></div></section>
+<section class="machines"><div class="wrap"><div class="machine-feature"><div class="photo machine-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/workshop-machine.webp" tabindex="0"/></div><div class="machine-copy"><div class="eyebrow">Mobiele recyclefabriek op school</div><h2>Recycleworkshops bij <span class="accent">jou op school</span></h2><p>Neem je eigen plastic mee en ontdek hoe je het met een spuitgietmachine en een snipperaar omtovert tot een nieuw product. Volg het hele recycleproces, van sorteren tot omsmelten, zoals het ook in het echt gaat. Zo merk je dat techniek en duurzaamheid veel meer zijn dan theorie.</p><div class="ticks"><div class="tick"><i>✓</i><span>Basisschool en middelbare school</span></div><div class="tick"><i>✓</i><span>Voor leerlingen van ongeveer 8–15 jaar</span></div><div class="tick"><i>✓</i><span>Past bij thema’s als duurzaamheid en techniek</span></div></div></div></div><div class="mini-gallery"><div class="photo mini-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/flakes-tubs.webp" tabindex="0"/></div><div class="photo mini-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/cup-flakes.webp" tabindex="0"/></div><div class="photo mini-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/mold-products.webp" tabindex="0"/></div></div></div></section><section class="process-band" id="proces"><div class="wrap"><div class="eyebrow">Van afval naar nieuw product</div><h2 class="section-title">Wat gaan we <span class="accent">doen?</span></h2><div class="steps"><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M38 12h20v10l6 8v45c0 5-4 9-9 9H41c-5 0-9-4-9-9V30l6-8z"></path><path d="M38 34h26M38 63h26"></path><path d="M43 12v10h10V12"></path><rect class="bottle-label" height="15" rx="3" width="28" x="34" y="42"></rect></g></svg></div><h3>Meenemen</h3><p>Je neemt je eigen geschikte plastic mee.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M31 16h18v9l5 7v43c0 5-4 8-8 8H34c-5 0-8-3-8-8V32l5-7z"></path><path d="M31 38h23M31 64h23"></path><path d="M36 16v9h8v-9"></path><path class="drop" d="M70 27s-11 13-11 21a11 11 0 0 0 22 0c0-8-11-21-11-21z"></path><path d="M66 50c1 3 3 5 6 6"></path></g></svg></div><h3>Schoonmaken</h3><p>We maken het materiaal klaar voor gebruik.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M30 13h18v9l5 7v18l-7 5-8-4-7 5-8-5V29l5-7z"></path><path d="M30 34h23M35 13v9h8v-9"></path><path d="M23 48l8 5 7-5 8 4 7-5"></path><path class="flake" d="M57 55l8-5 6 7-7 6zM72 45l8 4-3 9-9-3zM54 69l9-3 4 9-9 4zM72 66l9-3 3 9-9 4zM40 66l8-5 6 8-8 5z"></path></g></svg></div><h3>Versnipperen</h3><p>Van verpakking naar kleine kunststof flakes.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><rect height="60" rx="7" width="28" x="15" y="18"></rect><rect height="60" rx="7" width="28" x="53" y="18"></rect><path d="M43 30h10M43 66h10"></path><path class="mold-fill" d="M28 31c8 0 12 7 12 17s-4 17-12 17c-5 0-8-4-8-9 0-4 2-7 6-9-4-2-6-5-6-9 0-4 3-7 8-7zM68 31c-8 0-12 7-12 17s4 17 12 17c5 0 8-4 8-9 0-4-2-7-6-9 4-2 6-5 6-9 0-4-3-7-8-7z"></path><circle cx="24" cy="25" r="2"></circle><circle cx="72" cy="25" r="2"></circle><circle cx="24" cy="71" r="2"></circle><circle cx="72" cy="71" r="2"></circle></g></svg></div><h3>Spuitgieten</h3><p>De flakes worden verwarmd en in een mal gevormd.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M27 43h42l-5 36H32z"></path><path d="M34 43l3-10h22l3 10"></path><path d="M48 33V18"></path><path d="M48 25c-8 0-14-5-15-12 8-1 14 3 15 12zM48 29c8 0 14-5 15-12-8-1-14 3-15 12z"></path><path d="M37 58h22"></path></g></svg></div><h3>Iets nieuws</h3><p>Een nieuw voorwerp om zelf mee naar huis te nemen.</p></article></div></div></section>
+<section class="school" id="achtergrond"><div class="wrap school-grid"><div class="school-copy"><div class="eyebrow">Wie zit erachter?</div><h2>Over de <span class="accent">PlasticPerserij</span></h2><p>Joost Dommisse is industrieel ontwerper en bouwt met veel plezier recyclingmachines. Vanuit zijn achtergrond aan de TU Delft groeide die interesse uit tot een brede expertise in het lokaal recyclen van plastic. Met De PlasticPerserij brengt hij die ervaring de klas in, zodat leerlingen zelf kunnen ontdekken hoe duurzaamheid en techniek in de praktijk werken.</p></div><div class="photo school-photo"><img alt="Joost naast de automatische spuitgietmachine" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/joost-automatic-machine.webp" tabindex="0"/></div></div></section>
+<section class="progress" id="ontwikkeling"><div class="wrap progress-grid"><div class="van"><div class="photo"><img alt="Joost werkt met de handmatige spuitgietmachine" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/joost-manual-machine.webp" tabindex="0"/></div></div><div class="progress-copy"><div class="eyebrow">Planning</div><h2>Van start in <span class="accent">2027.</span></h2><p>De PlasticPerserij is nog volop in ontwikkeling. Vanaf medio 2027 zijn de eerste workshops naar verwachting in te plannen. Maar neem gerust vast contact op!</p></div></div></section><section class="contact-section" id="contact"><div class="wrap contact-inner"><div class="contact-copy"><div class="eyebrow">Contact</div><h2>Workshop op school?</h2><p>Interesse in een workshop, samenwerking of wil je gewoon iets vragen? Laat je gegevens achter.</p></div><form class="contact-form" id="contactForm"><div class="field-row"><label>Naam<input name="name" placeholder="Je naam" required="" type="text"/></label><label>School / organisatie<input name="school" placeholder="Naam van school" type="text"/></label></div><label>E-mailadres<input name="email" placeholder="jij@school.nl" required="" type="email"/></label><label>Bericht<textarea name="message" placeholder="Vertel kort waar je naar op zoek bent" required="" rows="5"></textarea></label><button class="contact-submit" type="submit">Verstuur bericht <span>➜</span></button></form></div></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="logo logo-image footer-logo" href="#top"><img alt="De Plastic Perserij" decoding="async" loading="lazy" src="images/logo.png"/></a><div class="footer-links"><a href="#top">Home</a><a href="#proces">Hoe het werkt</a><a href="#scholen">Voor scholen</a><a href="mailto:hoi@plasticperserij.nl">Contact</a></div><div class="small">PlasticPerserij · in ontwikkeling</div></div></footer>
+<script>
+(()=>{
+  const q=(s,c=document)=>[...c.querySelectorAll(s)];
+  // Reveal sections/cards as they enter the viewport.
+  const revealTargets=q('section h2, .section-title, .step, .machine-card, .school-card, .progress-visual, .progress-copy, section .photo');
+  revealTargets.forEach((el,i)=>{el.classList.add('reveal'); if(i%4) el.classList.add('reveal-delay-'+(i%4));});
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14,rootMargin:'0px 0px -5%'});
+  revealTargets.forEach(el=>io.observe(el));
+
+  // Header + tiny wave parallax.
+  const header=document.querySelector('header'), band=document.querySelector('.process-band');
+  if(band) band.classList.add('motion');
+  const onScroll=()=>{
+    header?.classList.toggle('scrolled',scrollY>24);
+    if(band){const r=band.getBoundingClientRect();band.style.setProperty('--wave-x',((innerHeight-r.top)*.018)+'px')}
+  }; addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // Subtle pointer tilt on the hero photo.
+  const visual=document.querySelector('.visual');
+  if(visual && matchMedia('(pointer:fine)').matches){
+    visual.addEventListener('mousemove',e=>{const r=visual.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;visual.style.transform=`perspective(900px) rotateX(${-y*2.8}deg) rotateY(${x*3.2}deg)`});
+    visual.addEventListener('mouseleave',()=>visual.style.transform='');
+  }
+
+
+  // Number cards get a tiny stagger when process section first appears.
+  const steps=q('.step');
+  steps.forEach((s,i)=>s.style.transitionDelay=(i*.06)+'s');
+})();
+</script>
+<div aria-hidden="true" aria-label="Afbeelding bekijken" aria-modal="true" class="lightbox" id="imageLightbox" role="dialog"><button aria-label="Sluiten" class="lightbox-close" type="button">×</button><img alt="Vergrote afbeelding"/></div><script>
+(() => {
+  const box=document.getElementById('imageLightbox');
+  const boxImg=box?.querySelector('img');
+  const closeBtn=box?.querySelector('.lightbox-close');
+  let lastFocus=null;
+  function openImage(img){
+    if(!box||!boxImg) return;
+    lastFocus=document.activeElement;
+    boxImg.src=img.currentSrc||img.src;
+    boxImg.alt=img.alt||'Vergrote afbeelding';
+    box.classList.add('open');
+    box.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    closeBtn?.focus();
+  }
+  function closeImage(){
+    if(!box) return;
+    box.classList.remove('open');
+    box.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    setTimeout(()=>{if(boxImg) boxImg.src='';},240);
+    lastFocus?.focus?.();
+  }
+  document.querySelectorAll('.zoomable-image').forEach(img=>{
+    img.addEventListener('click',()=>openImage(img));
+    img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openImage(img)}});
+  });
+  closeBtn?.addEventListener('click',closeImage);
+  box?.addEventListener('click',e=>{if(e.target===box) closeImage();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box?.classList.contains('open')) closeImage();});
+})();
+</script><script>document.getElementById('contactForm')?.addEventListener('submit',function(e){e.preventDefault();const f=new FormData(this);const subject=encodeURIComponent('Contact via PlasticPerserij.com');const body=encodeURIComponent(`Naam: ${f.get('name')}\nSchool / organisatie: ${f.get('school')||'-'}\nE-mail: ${f.get('email')}\n\n${f.get('message')}`);window.location.href=`mailto:plasticperserij@gmail.com?subject=${subject}&body=${body}`;});</script></body></html>
