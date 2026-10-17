@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>PlasticPerserij — mobiele recycleworkshops</title>
+<title>Plastic recyclen op school | De PlasticPerserij</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<meta content="PlasticPerserij bouwt aan mobiele recycleworkshops waarin kinderen hun eigen plastic verwerken tot iets nieuws." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Poetsen+One&amp;display=swap" rel="stylesheet"/>
+<meta content="De PlasticPerserij: recycleworkshops op scholen waarin leerlingen hun eigen plastic sorteren, versnipperen en spuitgieten tot iets nieuws." name="description"/>
 <style>
 :root{--navy:#111111;--purple:#1976d2;--purple2:#43a7e8;--yellow:#ffd54a;--sky:#eef8ff;--lilac:#f2f7fb;--pink:#f7f3ee;--cream:#fff9df;--muted:#62666d;--line:#e7e9ec;--white:#fff;--shadow:0 18px 45px rgba(39,35,94,.10);--r:30px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--navy);font-family:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:#77749a}.accent{color:var(--purple)}
@@ -62,6 +62,9 @@ header{height:116px}
 .step:nth-child(1) .step-visual svg{stroke:#2587d8}.step:nth-child(2) .step-visual svg{stroke:#d99b00}.step:nth-child(3) .step-visual svg{stroke:#dc5e98}.step:nth-child(4) .step-visual svg{stroke:#6557df}.step:nth-child(5) .step-visual svg{stroke:#248b60}
 @media(max-width:900px){header{height:96px}.logo-image{width:190px;height:72px}.contact-cta{padding:12px 16px}.nav a{padding:9px 11px}}
 @media(max-width:680px){.logo-image{width:170px;height:66px}.nav{display:none}.contact-cta span{display:none}}
+
+/* Poetsen One for headings */
+h1,h2,h3{font-family:"Poetsen One","Plus Jakarta Sans",sans-serif;font-weight:400;letter-spacing:-.015em;line-height:1.02}
 </style>
 <style>
 /* v3 feedback pass */
@@ -163,32 +166,72 @@ header{height:126px}
 .contact-submit span{margin-left:7px;animation:arrowNudge 1.6s ease-in-out infinite}
 .step:not(:last-child):after{content:"➜";font-size:24px;font-weight:950}
 .step-visual .flake{animation:none!important;transform:none!important;will-change:auto!important}
-</style><link href="https://plasticperserij.com/" rel="canonical"/></head>
+</style>
+<style>
+/* Mobile stability + static process section */
+.van:after{display:none!important}
+.progress-copy p a{color:inherit;font-weight:800;text-underline-offset:3px}
+.process-band,.process-band *{animation:none!important;transition:none!important}
+.process-band .reveal,.process-band .reveal.in{opacity:1!important;transform:none!important}
+.process-band:before,.process-band:after{transform:none!important}
+.step .num,.step-visual,.step-visual *{animation:none!important;transition:none!important;transform:none!important;will-change:auto!important}
+@media(max-width:900px){
+  .machine-feature,.school-grid,.progress-grid,.contact-inner,.hero-grid{min-width:0}
+  .machine-copy,.school-copy,.progress-copy,.contact-copy{min-width:0}
+  .machine-copy h2,.school-copy h2,.progress-copy h2,.contact-copy h2,.section-title{font-size:clamp(38px,11vw,50px);overflow-wrap:break-word}
+  .machine-copy p,.school-copy p,.progress-copy p{overflow-wrap:anywhere}
+}
+@media(max-width:480px){
+  .wrap{width:min(100% - 32px,1180px)}
+  .machine-copy h2,.school-copy h2,.progress-copy h2,.contact-copy h2,.section-title{font-size:clamp(36px,10.5vw,44px);line-height:.96;letter-spacing:-.05em}
+  .machine-copy p,.school-copy p,.progress-copy p{font-size:16px}
+}
+</style>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="nl_NL"/>
+<meta property="og:site_name" content="De PlasticPerserij"/>
+<meta property="og:title" content="Plastic recyclen op school | De PlasticPerserij"/>
+<meta property="og:description" content="De PlasticPerserij: recycleworkshops op scholen waarin leerlingen hun eigen plastic sorteren, versnipperen en spuitgieten tot iets nieuws."/>
+<meta property="og:url" content="https://plasticperserij.com/"/>
+<meta property="og:image" content="https://plasticperserij.com/images/hero.webp"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "De PlasticPerserij",
+  "url": "https://plasticperserij.com/",
+  "email": "hallo@plasticperserij.com",
+  "description": "De PlasticPerserij geeft mobiele recycleworkshops op scholen waarin leerlingen zelf plastic recyclen."
+}
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://plasticperserij.com/" rel="canonical"/></head>
 <body>
 <header><div class="wrap header-inner"><a class="logo logo-image" href="#top"><img alt="De Plastic Perserij" decoding="async" loading="lazy" src="images/logo.png"/></a><nav class="nav"><a href="#top">Home</a><a href="#proces">Hoe het werkt</a><a href="#achtergrond">Achtergrond</a></nav><a class="status contact-cta" href="#contact">Contact <span>➜</span></a></div></header>
 <main id="top">
-<section class="hero"><div class="wrap hero-grid"><div><h1>Oud plastic, <span class="accent">Jonge makers.</span></h1><p>Leer alles over plastic recyclen bij jou op locatie. Tover je eigen plastic afval om tot iets nieuws in de mobiele fabriek van De PlasticPerserij.</p><a class="button" href="#contact">Workshop inplannen? <span>➜</span></a></div><div class="visual"><div class="blob purple"></div><div class="blob yellow"></div><div class="photo hero-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" fetchpriority="high" loading="eager" role="button" src="images/hero.webp" tabindex="0"/></div><i class="flake f1"></i><i class="flake f2"></i><i class="flake f3"></i></div></div></section>
-<section class="machines"><div class="wrap"><div class="machine-feature"><div class="photo machine-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/workshop-machine.webp" tabindex="0"/></div><div class="machine-copy"><div class="eyebrow">Mobiele recyclefabriek op school</div><h2>Recycleworkshops bij <span class="accent">jou op school</span></h2><p>Neem je eigen plastic mee en ontdek hoe je het met een spuitgietmachine en een snipperaar omtovert tot een nieuw product. Volg het hele recycleproces, van sorteren tot omsmelten, zoals het ook in het echt gaat. Zo merk je dat techniek en duurzaamheid veel meer zijn dan theorie.</p><div class="ticks"><div class="tick"><i>✓</i><span>Basisschool en middelbare school</span></div><div class="tick"><i>✓</i><span>Voor leerlingen van ongeveer 8–15 jaar</span></div><div class="tick"><i>✓</i><span>Past bij thema’s als duurzaamheid en techniek</span></div></div></div></div><div class="mini-gallery"><div class="photo mini-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/flakes-tubs.webp" tabindex="0"/></div><div class="photo mini-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/cup-flakes.webp" tabindex="0"/></div><div class="photo mini-photo"><img alt="" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/mold-products.webp" tabindex="0"/></div></div></div></section><section class="process-band" id="proces"><div class="wrap"><div class="eyebrow">Van afval naar nieuw product</div><h2 class="section-title">Wat gaan we <span class="accent">doen?</span></h2><div class="steps"><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M38 12h20v10l6 8v45c0 5-4 9-9 9H41c-5 0-9-4-9-9V30l6-8z"></path><path d="M38 34h26M38 63h26"></path><path d="M43 12v10h10V12"></path><rect class="bottle-label" height="15" rx="3" width="28" x="34" y="42"></rect></g></svg></div><h3>Meenemen</h3><p>Je neemt je eigen geschikte plastic mee.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M31 16h18v9l5 7v43c0 5-4 8-8 8H34c-5 0-8-3-8-8V32l5-7z"></path><path d="M31 38h23M31 64h23"></path><path d="M36 16v9h8v-9"></path><path class="drop" d="M70 27s-11 13-11 21a11 11 0 0 0 22 0c0-8-11-21-11-21z"></path><path d="M66 50c1 3 3 5 6 6"></path></g></svg></div><h3>Schoonmaken</h3><p>We maken het materiaal klaar voor gebruik.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M30 13h18v9l5 7v18l-7 5-8-4-7 5-8-5V29l5-7z"></path><path d="M30 34h23M35 13v9h8v-9"></path><path d="M23 48l8 5 7-5 8 4 7-5"></path><path class="flake" d="M57 55l8-5 6 7-7 6zM72 45l8 4-3 9-9-3zM54 69l9-3 4 9-9 4zM72 66l9-3 3 9-9 4zM40 66l8-5 6 8-8 5z"></path></g></svg></div><h3>Versnipperen</h3><p>Van verpakking naar kleine kunststof flakes.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><rect height="60" rx="7" width="28" x="15" y="18"></rect><rect height="60" rx="7" width="28" x="53" y="18"></rect><path d="M43 30h10M43 66h10"></path><path class="mold-fill" d="M28 31c8 0 12 7 12 17s-4 17-12 17c-5 0-8-4-8-9 0-4 2-7 6-9-4-2-6-5-6-9 0-4 3-7 8-7zM68 31c-8 0-12 7-12 17s4 17 12 17c5 0 8-4 8-9 0-4-2-7-6-9 4-2 6-5 6-9 0-4-3-7-8-7z"></path><circle cx="24" cy="25" r="2"></circle><circle cx="72" cy="25" r="2"></circle><circle cx="24" cy="71" r="2"></circle><circle cx="72" cy="71" r="2"></circle></g></svg></div><h3>Spuitgieten</h3><p>De flakes worden verwarmd en in een mal gevormd.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M27 43h42l-5 36H32z"></path><path d="M34 43l3-10h22l3 10"></path><path d="M48 33V18"></path><path d="M48 25c-8 0-14-5-15-12 8-1 14 3 15 12zM48 29c8 0 14-5 15-12-8-1-14 3-15 12z"></path><path d="M37 58h22"></path></g></svg></div><h3>Iets nieuws</h3><p>Een nieuw voorwerp om zelf mee naar huis te nemen.</p></article></div></div></section>
+<section class="hero"><div class="wrap hero-grid"><div><h1>Oud plastic, <span class="accent">Jonge makers.</span></h1><p>Ontdek alles over plastic recyclen in een workshop bij jou op school. Tover je eigen plastic afval om tot iets nieuws in de mobiele fabriek van De PlasticPerserij</p><a class="button" href="#contact">Workshop inplannen? <span>➜</span></a></div><div class="visual"><div class="blob purple"></div><div class="blob yellow"></div><div class="photo hero-photo"><img alt="Plastic recyclen tijdens een workshop" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" fetchpriority="high" loading="eager" role="button" src="images/hero.webp" tabindex="0"/></div><i class="flake f1"></i><i class="flake f2"></i><i class="flake f3"></i></div></div></section>
+<section class="machines" id="scholen"><div class="wrap"><div class="machine-feature"><div class="photo machine-photo"><img alt="Machine voor het recyclen van plastic tijdens een workshop" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/workshop-machine.webp" tabindex="0"/></div><div class="machine-copy"><div class="eyebrow">Mobiele recyclefabriek op school</div><h2>Recycleworkshops bij <span class="accent">jou op school</span></h2><p>Neem je eigen plastic mee en ontdek hoe je het met een spuitgietmachine en een snipperaar omtovert tot een nieuw product. Volg het hele recycleproces, van sorteren tot omsmelten, zoals het ook in het echt gaat. Zo merk je dat techniek en duurzaamheid veel meer zijn dan theorie.</p><div class="ticks"><div class="tick"><i>✓</i><span>Basisschool en middelbare school</span></div><div class="tick"><i>✓</i><span>Voor leerlingen van ongeveer 8–15 jaar</span></div><div class="tick"><i>✓</i><span>Past bij thema’s als duurzaamheid en techniek</span></div></div></div></div><div class="mini-gallery"><div class="photo mini-photo"><img alt="Gesorteerde kunststof flakes voor recycling" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/flakes-tubs.webp" tabindex="0"/></div><div class="photo mini-photo"><img alt="Versnipperd plastic klaar om opnieuw te verwerken" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/cup-flakes.webp" tabindex="0"/></div><div class="photo mini-photo"><img alt="Nieuwe producten gemaakt van gerecycled plastic" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/mold-products.webp" tabindex="0"/></div></div></div></section><section class="process-band" id="proces"><div class="wrap"><div class="eyebrow">Van afval naar nieuw product</div><h2 class="section-title">Wat gaan we <span class="accent">doen?</span></h2><div class="steps"><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M38 12h20v10l6 8v45c0 5-4 9-9 9H41c-5 0-9-4-9-9V30l6-8z"></path><path d="M38 34h26M38 63h26"></path><path d="M43 12v10h10V12"></path><rect class="bottle-label" height="15" rx="3" width="28" x="34" y="42"></rect></g></svg></div><h3>Meenemen</h3><p>Je neemt je eigen geschikte plastic mee.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M31 16h18v9l5 7v43c0 5-4 8-8 8H34c-5 0-8-3-8-8V32l5-7z"></path><path d="M31 38h23M31 64h23"></path><path d="M36 16v9h8v-9"></path><path class="drop" d="M70 27s-11 13-11 21a11 11 0 0 0 22 0c0-8-11-21-11-21z"></path><path d="M66 50c1 3 3 5 6 6"></path></g></svg></div><h3>Schoonmaken</h3><p>We maken het materiaal klaar voor gebruik.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M30 13h18v9l5 7v18l-7 5-8-4-7 5-8-5V29l5-7z"></path><path d="M30 34h23M35 13v9h8v-9"></path><path d="M23 48l8 5 7-5 8 4 7-5"></path><path class="flake" d="M57 55l8-5 6 7-7 6zM72 45l8 4-3 9-9-3zM54 69l9-3 4 9-9 4zM72 66l9-3 3 9-9 4zM40 66l8-5 6 8-8 5z"></path></g></svg></div><h3>Versnipperen</h3><p>Van verpakking naar kleine kunststof flakes.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><rect height="60" rx="7" width="28" x="15" y="18"></rect><rect height="60" rx="7" width="28" x="53" y="18"></rect><path d="M43 30h10M43 66h10"></path><path class="mold-fill" d="M28 31c8 0 12 7 12 17s-4 17-12 17c-5 0-8-4-8-9 0-4 2-7 6-9-4-2-6-5-6-9 0-4 3-7 8-7zM68 31c-8 0-12 7-12 17s4 17 12 17c5 0 8-4 8-9 0-4-2-7-6-9 4-2 6-5 6-9 0-4-3-7-8-7z"></path><circle cx="24" cy="25" r="2"></circle><circle cx="72" cy="25" r="2"></circle><circle cx="24" cy="71" r="2"></circle><circle cx="72" cy="71" r="2"></circle></g></svg></div><h3>Spuitgieten</h3><p>De flakes worden verwarmd en in een mal gevormd.</p></article><article class="step"><div class="step-visual"><svg aria-hidden="true" viewbox="0 0 96 96"><g class="icon-stroke"><path d="M27 43h42l-5 36H32z"></path><path d="M34 43l3-10h22l3 10"></path><path d="M48 33V18"></path><path d="M48 25c-8 0-14-5-15-12 8-1 14 3 15 12zM48 29c8 0 14-5 15-12-8-1-14 3-15 12z"></path><path d="M37 58h22"></path></g></svg></div><h3>Iets nieuws</h3><p>Een nieuw voorwerp om zelf mee naar huis te nemen.</p></article></div></div></section>
 <section class="school" id="achtergrond"><div class="wrap school-grid"><div class="school-copy"><div class="eyebrow">Wie zit erachter?</div><h2>Over de <span class="accent">PlasticPerserij</span></h2><p>Joost Dommisse is industrieel ontwerper en bouwt met veel plezier recyclingmachines. Vanuit zijn achtergrond aan de TU Delft groeide die interesse uit tot een brede expertise in het lokaal recyclen van plastic. Met De PlasticPerserij brengt hij die ervaring de klas in, zodat leerlingen zelf kunnen ontdekken hoe duurzaamheid en techniek in de praktijk werken.</p></div><div class="photo school-photo"><img alt="Joost naast de automatische spuitgietmachine" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/joost-automatic-machine.webp" tabindex="0"/></div></div></section>
-<section class="progress" id="ontwikkeling"><div class="wrap progress-grid"><div class="van"><div class="photo"><img alt="Joost werkt met de handmatige spuitgietmachine" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/joost-manual-machine.webp" tabindex="0"/></div></div><div class="progress-copy"><div class="eyebrow">Planning</div><h2>Van start in <span class="accent">2027.</span></h2><p>De PlasticPerserij is nog volop in ontwikkeling. Vanaf medio 2027 zijn de eerste workshops naar verwachting in te plannen. Maar neem gerust vast contact op!</p></div></div></section><section class="contact-section" id="contact"><div class="wrap contact-inner"><div class="contact-copy"><div class="eyebrow">Contact</div><h2>Workshop op school?</h2><p>Interesse in een workshop, samenwerking of wil je gewoon iets vragen? Laat je gegevens achter.</p></div><form action="https://formspree.io/f/maeqazad" class="contact-form" id="contactForm" method="POST"><div class="field-row"><label>Naam<input name="name" placeholder="Je naam" required="" type="text"/></label><label>School / organisatie<input name="school" placeholder="Naam van school" type="text"/></label></div><label>E-mailadres<input name="email" placeholder="jij@school.nl" required="" type="email"/></label><label>Bericht<textarea name="message" placeholder="Vertel kort waar je naar op zoek bent" required="" rows="5"></textarea></label><button class="contact-submit" type="submit">Verstuur bericht <span>➜</span></button><div aria-live="polite" class="form-status" id="formStatus" role="status"></div></form></div></section>
+<section class="progress" id="ontwikkeling"><div class="wrap progress-grid"><div class="van"><div class="photo"><img alt="Joost werkt met de handmatige spuitgietmachine" aria-label="Afbeelding vergroten" class="zoomable-image" decoding="async" loading="lazy" role="button" src="images/joost-manual-machine.webp" tabindex="0"/></div></div><div class="progress-copy"><div class="eyebrow">Planning</div><h2>Van start in <span class="accent">2027.</span></h2><p>De PlasticPerserij is nog volop in ontwikkeling. Vanaf medio 2027 zijn de eerste workshops naar verwachting in te plannen. Maar stuur vooral vast een mailtje via <a href="mailto:hallo@plasticperserij.com">hallo@plasticperserij.com</a> of het formulier hieronder!</p></div></div></section><section class="contact-section" id="contact"><div class="wrap contact-inner"><div class="contact-copy"><div class="eyebrow">Contact</div><h2>Workshop op school?</h2><p>Interesse in een workshop, samenwerking of wil je gewoon iets vragen? Laat je gegevens achter.</p></div><form action="https://formspree.io/f/maeqazad" class="contact-form" id="contactForm" method="POST"><div class="field-row"><label>Naam<input name="name" placeholder="Je naam" required="" type="text"/></label><label>School / organisatie<input name="school" placeholder="Naam van school" type="text"/></label></div><label>E-mailadres<input name="email" placeholder="jij@school.nl" required="" type="email"/></label><label>Bericht<textarea name="message" placeholder="Vertel kort waar je naar op zoek bent" required="" rows="5"></textarea></label><button class="contact-submit" type="submit">Verstuur bericht <span>➜</span></button><div aria-live="polite" class="form-status" id="formStatus" role="status"></div></form></div></section>
 </main>
 <footer><div class="wrap footer-inner"><a class="logo logo-image footer-logo" href="#top"><img alt="De Plastic Perserij" decoding="async" loading="lazy" src="images/logo.png"/></a><div class="footer-links"><a href="#top">Home</a><a href="#proces">Hoe het werkt</a><a href="#scholen">Voor scholen</a><a href="mailto:hallo@plasticperserij.com">Contact</a></div><div class="small">PlasticPerserij · in ontwikkeling</div></div></footer>
 <script>
 (()=>{
   const q=(s,c=document)=>[...c.querySelectorAll(s)];
   // Reveal sections/cards as they enter the viewport.
-  const revealTargets=q('section h2, .section-title, .step, .machine-card, .school-card, .progress-visual, .progress-copy, section .photo');
+  const revealTargets=q('section h2, .machine-card, .school-card, .progress-visual, .progress-copy, section .photo').filter(el=>!el.closest('.process-band'));
   revealTargets.forEach((el,i)=>{el.classList.add('reveal'); if(i%4) el.classList.add('reveal-delay-'+(i%4));});
   const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14,rootMargin:'0px 0px -5%'});
   revealTargets.forEach(el=>io.observe(el));
 
-  // Header + tiny wave parallax.
-  const header=document.querySelector('header'), band=document.querySelector('.process-band');
-  if(band) band.classList.add('motion');
-  const onScroll=()=>{
-    header?.classList.toggle('scrolled',scrollY>24);
-    if(band){const r=band.getBoundingClientRect();band.style.setProperty('--wave-x',((innerHeight-r.top)*.018)+'px')}
-  }; addEventListener('scroll',onScroll,{passive:true});onScroll();
+  // Header state on scroll.
+  const header=document.querySelector('header');
+  const onScroll=()=>header?.classList.toggle('scrolled',scrollY>24);
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
 
   // Subtle pointer tilt on the hero photo.
   const visual=document.querySelector('.visual');
@@ -197,10 +240,6 @@ header{height:126px}
     visual.addEventListener('mouseleave',()=>visual.style.transform='');
   }
 
-
-  // Number cards get a tiny stagger when process section first appears.
-  const steps=q('.step');
-  steps.forEach((s,i)=>s.style.transitionDelay=(i*.06)+'s');
 })();
 </script>
 <div aria-hidden="true" aria-label="Afbeelding bekijken" aria-modal="true" class="lightbox" id="imageLightbox" role="dialog"><button aria-label="Sluiten" class="lightbox-close" type="button">×</button><img alt="Vergrote afbeelding"/></div><script>
@@ -236,3 +275,10 @@ header{height:126px}
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box?.classList.contains('open')) closeImage();});
 })();
 </script><script>document.getElementById('contactForm')?.addEventListener('submit',async function(e){e.preventDefault();const form=this;const button=form.querySelector('.contact-submit');const status=document.getElementById('formStatus');const original=button.innerHTML;button.disabled=true;button.textContent='Versturen…';status.className='form-status';status.textContent='';try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(response.ok){form.reset();status.className='form-status success';status.textContent='Bedankt! Je bericht is verstuurd.';}else{throw new Error('Formspree response was not OK');}}catch(error){status.className='form-status error';status.textContent='Het versturen is niet gelukt. Probeer het nog eens of mail naar hallo@plasticperserij.com.';}finally{button.disabled=false;button.innerHTML=original;}});</script></body></html>
+
+<style>
+/* Slightly more breathing room for the main heading */
+.hero h1{letter-spacing:-.02em;line-height:.96}
+.machine-copy h2,.school-copy h2,.progress-copy h2,.contact-copy h2,.section-title{letter-spacing:-.015em;line-height:1.02}
+.step h3{letter-spacing:0;line-height:1.12}
+</style>
