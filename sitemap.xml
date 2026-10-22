@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://plasticperserij.com/</loc>
-  </url>
+  <url><loc>https://plasticperserij.com/</loc></url>
+  <url><loc>https://plasticperserij.com/over.html</loc></url>
+  <url><loc>https://plasticperserij.com/producten.html</loc></url>
+  <url><loc>https://plasticperserij.com/productie.html</loc></url>
+  <url><loc>https://plasticperserij.com/op-locatie.html</loc></url>
+  <url><loc>https://plasticperserij.com/contact.html</loc></url>
 </urlset>
