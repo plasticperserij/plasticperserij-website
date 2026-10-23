@@ -104,3 +104,158 @@ header{height:94px}.header-inner{position:relative;top:-5px}.logo{margin-left:-7
 @media(prefers-reduced-motion:reduce){.hero .visual img,.hero .visual:before,.hero .visual:after{animation:none!important}}
 
 .purchase-row{display:flex;align-items:center;gap:8px;margin-top:0}.purchase-row .add{margin:0;white-space:nowrap}.purchase-row .qty{flex:0 0 72px}.product-body{padding-bottom:22px}.product-body p{font-size:13px;line-height:1.5}
+
+/* v10: finale fotografie + rustige hero */
+.hero{overflow:hidden}
+.hero-grid{position:relative;isolation:isolate}
+.hero-grid>div:first-child{position:relative;z-index:3}
+.hero .visual{z-index:1;margin-left:-150px;pointer-events:none}
+.hero .visual:before,.hero .visual:after{display:none!important}
+.hero .visual img{animation:none!important;filter:none!important;will-change:auto;width:132%;max-height:650px}
+@media(max-width:900px){.hero .visual{margin-left:0;margin-top:-70px}.hero .visual img{width:118%;max-height:500px}}
+
+
+/* v11 final photo refinements */
+.hero{padding-top:34px}
+.hero .visual img{content:none;animation:none!important;filter:none!important}
+/* Product framing: keep the card geometry stable while tuning subject scale. */
+.product-img img,.home-products .mini-product-image img{object-fit:contain;background:#f6f6f4}
+.product:nth-child(1) .product-img img{transform:scale(.75)}
+.product:nth-child(1):hover .product-img img{transform:scale(.79)}
+.product:nth-child(4) .product-img img{transform:scale(1.16)}
+.product:nth-child(4):hover .product-img img{transform:scale(1.21)}
+.home-products .mini-product:nth-child(1) .mini-product-image img{transform:scale(1.12)}
+.home-products .mini-product:nth-child(1):hover .mini-product-image img{transform:scale(1.17)}
+.home-products .mini-product:nth-child(3) .mini-product-image img{transform:scale(.78)}
+.home-products .mini-product:nth-child(3):hover .mini-product-image img{transform:scale(.82)}
+/* Home partner strip */
+.logo-band .logos{grid-template-columns:repeat(5,1fr)}
+.logo-band .logo-coma img{max-width:94%;max-height:70px}
+/* Contact action uses the same yellow as the floating contact button. */
+.home-contact .contact-submit{background:#ffb51b}
+.home-contact .contact-submit:hover{background:#ffc238;transform:translateY(-2px)}
+/* Over opening image and text */
+.over-intro-photo{padding:28px 0 8px}
+.over-feature-photo{max-width:544px;height:304px;box-shadow:0 18px 42px rgba(30,45,90,.13);transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.over-feature-photo:hover{transform:translateY(-5px) rotate(-.35deg);box-shadow:0 24px 52px rgba(30,45,90,.16)}
+.over-intro{padding-top:20px!important;padding-bottom:48px!important}
+.over-intro-text{max-width:720px;margin:0 auto;text-align:center;color:#45455f;font-size:18px;line-height:1.6}
+/* Production + workshop hero photography */
+.technical-placeholder{padding:0;background:#f5f7f8}
+.technical-placeholder img{object-fit:cover!important;width:100%;height:100%;object-position:center}
+.production-hero .technical-placeholder img{object-position:center 58%}
+.workshop-hero-photo{height:430px;box-shadow:var(--shadow);border-radius:38px;overflow:hidden}
+.workshop-hero-photo img{object-position:center center}
+/* Material tester shop callout */
+.tester-callout{padding:26px 0 74px;background:#fff}
+.tester-callout-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:34px 38px;border-radius:34px;background:linear-gradient(135deg,#f3f8fc,#f8f5ff);box-shadow:0 12px 34px rgba(30,45,90,.05)}
+.tester-callout-copy h2{font-size:34px;margin:8px 0 12px}.tester-callout-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.65;max-width:620px}
+.tester-mini-card{display:grid;grid-template-columns:46% 54%;overflow:hidden;border-radius:24px;background:#fff;box-shadow:0 12px 28px rgba(30,45,90,.07)}
+.tester-mini-image{height:220px;background:#f6f6f4;overflow:hidden}.tester-mini-image img{width:100%;height:100%;object-fit:contain;transition:transform .4s ease}.tester-mini-card:hover .tester-mini-image img{transform:scale(1.04)}
+.tester-mini-body{padding:22px;display:flex;flex-direction:column;justify-content:center;gap:14px}.tester-mini-body strong{display:block;font-size:17px}.tester-mini-body span{font-size:15px;font-weight:800}.tester-buy{display:flex;gap:8px;align-items:center}.tester-buy .qty{width:64px;height:42px;padding:8px 10px}.tester-buy .button{padding:11px 14px;font-size:12px;white-space:nowrap}
+@media(max-width:900px){.hero{padding-top:10px}.logo-band .logos{grid-template-columns:repeat(3,1fr)}.over-feature-photo{max-width:435px;height:245px}.over-intro-text{font-size:16px}.tester-callout-inner{grid-template-columns:1fr}.workshop-hero-photo{height:300px}.tester-mini-card{max-width:520px}}
+@media(max-width:560px){.logo-band .logos{grid-template-columns:repeat(2,1fr)}.over-feature-photo{max-width:88%;height:220px}.tester-callout-inner{padding:25px 20px}.tester-mini-card{grid-template-columns:1fr}.tester-mini-image{height:190px}.tester-buy{flex-wrap:wrap}}
+
+/* v13: requested final sizing and section cleanup */
+.product-img,.home-products .mini-product-image,.tester-mini-image{background:#f9f9fb!important}
+.product-img img,.home-products .mini-product-image img,.tester-mini-image img{background:transparent!important;object-fit:contain!important;padding:24px;transition:transform .2s ease}
+
+/* Move the complete homepage hero upward, while keeping the site header untouched. */
+.home-hero{margin-top:-45px}
+.home-hero .visual{transform:none!important}
+
+/* Quiet shop callout with a small soft shadow. */
+.shop-callout{box-shadow:0 12px 30px rgba(30,45,90,.08)}
+
+/* Homepage product cut-outs: 20% larger inside unchanged cards. */
+.home-products .mini-product:nth-child(1) .mini-product-image img{transform:scale(1.13)!important}
+.home-products .mini-product:nth-child(1):hover .mini-product-image img{transform:scale(1.17)!important}
+.home-products .mini-product:nth-child(2) .mini-product-image img{transform:scale(1.08)!important}
+.home-products .mini-product:nth-child(2):hover .mini-product-image img{transform:scale(1.12)!important}
+.home-products .mini-product:nth-child(3) .mini-product-image img{transform:scale(.94)!important}
+.home-products .mini-product:nth-child(3):hover .mini-product-image img{transform:scale(.98)!important}
+
+/* Shop cut-outs: 50% larger, except the ruler. Card dimensions remain unchanged. */
+.product:nth-child(1) .product-img img{transform:scale(1.17)!important}
+.product:nth-child(1):hover .product-img img{transform:scale(1.21)!important}
+.product:nth-child(2) .product-img img{transform:scale(1.32)!important}
+.product:nth-child(2):hover .product-img img{transform:scale(1.36)!important}
+.product:nth-child(3) .product-img img{transform:scale(.90)!important}
+.product:nth-child(3):hover .product-img img{transform:scale(.94)!important}
+.product:nth-child(4) .product-img img{transform:scale(1.41)!important}
+.product:nth-child(4):hover .product-img img{transform:scale(1.45)!important}
+
+/* Production material tester card: larger cut-out, only product name in orange. */
+.tester-mini-image img{transform:scale(1.32)!important}
+.tester-mini-card:hover .tester-mini-image img{transform:scale(1.36)!important}
+.tester-callout-copy h2{color:var(--ink)!important;margin-top:0}
+.tester-callout-copy h2 span{color:#ff9f1a}
+
+/* Full-width pink atmosphere behind the home About section. */
+.home-about{background:radial-gradient(circle at 18% 42%,rgba(229,190,255,.60),transparent 38%),radial-gradient(circle at 76% 45%,rgba(255,211,232,.48),transparent 43%),linear-gradient(100deg,#fff7fb 0%,#fbf4ff 52%,#fff8fb 100%)!important}
+
+/* No wave edges: section backgrounds end cleanly. */
+section.soft,section.process-soft,section.production-start.soft,section.pad.pink{margin-top:0;margin-bottom:0}
+section.soft:before,section.process-soft:before,section.production-start.soft:before,section.pad.pink:before,
+section.soft:after,section.process-soft:after,section.production-start.soft:after,section.pad.pink:after{content:none!important;display:none!important}
+
+@media(max-width:900px){
+  .home-hero{margin-top:-45px}
+  .product-img img,.home-products .mini-product-image img,.tester-mini-image img{padding:18px}
+}
+
+
+/* v14: mobile layout + containment fixes */
+/* Remove the old decorative grey blotch in the homepage shop panel. */
+.shop-callout:before{display:none!important}
+
+/* Service photography must always stay clipped to its rounded card, including hover. */
+.service-card{overflow:hidden!important}
+.service-image{overflow:hidden}
+
+/* Hamburger is desktop-hidden; mobile styles are below. */
+.menu-toggle{display:none;border:0;background:transparent;padding:9px 7px;cursor:pointer;border-radius:12px}
+.menu-toggle span{display:block;width:23px;height:2px;background:#111;border-radius:2px;margin:5px 0;transition:transform .22s ease,opacity .22s ease}
+.menu-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle.open span:nth-child(2){opacity:0}
+.menu-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Replace the mobile cart emoji with a custom white outline icon. */
+@media(max-width:900px){
+  header{overflow:visible}
+  .header-inner{position:relative;gap:10px}
+  .menu-toggle{display:block;order:4;flex:0 0 auto}
+  .cartlink{order:3;display:inline-flex;align-items:center;justify-content:center;gap:4px;padding:11px 12px;min-width:47px}
+  .cartlink:before{content:''!important;width:20px;height:20px;display:block;background:#fff;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='black' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 13h7l5 29h28l6-20H19'/%3E%3Ccircle cx='26' cy='51' r='3'/%3E%3Ccircle cx='47' cy='51' r='3'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='black' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 13h7l5 29h28l6-20H19'/%3E%3Ccircle cx='26' cy='51' r='3'/%3E%3Ccircle cx='47' cy='51' r='3'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+  .cart-count{margin-left:0}
+  .nav{display:none;position:absolute;left:0!important;right:0;top:calc(100% + 10px)!important;transform:none!important;margin:0!important;padding:10px;background:rgba(255,255,255,.98);border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 38px rgba(30,45,90,.13);flex-direction:column;align-items:stretch;z-index:40}
+  .nav.open{display:flex}
+  .nav a{font-size:14px;padding:12px 14px;text-align:left}
+
+  /* On narrow screens, photography leads the hero instead of sitting beside/below the copy. */
+  .home-hero .hero-grid,.workshop-hero .hero-grid{display:flex;flex-direction:column;gap:20px}
+  .home-hero .visual,.workshop-hero .technical-placeholder{order:-1;width:100%}
+  .home-hero .visual{margin:0 0 -20px!important;min-height:330px}
+  .home-hero .visual img{width:112%;max-height:390px}
+  .workshop-hero .technical-placeholder{height:300px;margin-bottom:8px}
+
+  /* Every material-process card gets its own row on mobile. */
+  .process,.original-process{grid-template-columns:1fr!important}
+}
+
+@media(max-width:560px){
+  .logo img{width:145px}
+  .home-hero .visual{min-height:285px}
+  .home-hero .visual img{width:118%;max-height:335px}
+  .workshop-hero .technical-placeholder{height:250px}
+}
+
+/* v15: mobile header order + coloured plant-pot process icon */
+@media(max-width:900px){
+  .header-inner{justify-content:flex-start}
+  .logo{margin-right:auto}
+  .cartlink{order:3;margin-left:auto}
+  .menu-toggle{order:4;margin-left:2px}
+}
+.process-card.product-result .pot-fill{fill:#7657e8;stroke:#7657e8}
+.process-card.product-result .pot-rim{fill:#43a7e8;stroke:#1976d2}

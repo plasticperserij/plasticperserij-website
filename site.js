@@ -1,4 +1,4 @@
-const PRICES={Stopcontactbehuizing:25,Materiaaltester:12.5,Karabijnhaak:9.5,Plantenpotje:17.5};
+const PRICES={Stopcontactbehuizing:25,Materiaaltester:12.5,Lineaal:9.5,Plantenpotje:17.5};
 const euro=n=>new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR'}).format(n);
 const getCart=()=>JSON.parse(localStorage.getItem('ppCart')||'[]');
 const setCart=c=>{localStorage.setItem('ppCart',JSON.stringify(c));updateCount()};
@@ -12,3 +12,19 @@ let af=document.getElementById('addressForm');if(af)af.onsubmit=e=>{e.preventDef
 let sum=document.getElementById('orderSummary');if(sum){let c=getCart(),a=JSON.parse(localStorage.getItem('ppAddress')||'{}');let total=c.reduce((s,i)=>s+(i.price??PRICES[i.product]??0)*i.qty,0);let txt='PRODUCTEN\n'+c.map(i=>`- ${i.product} | kleur: ${i.color} | aantal: ${i.qty} | ${euro((i.price??PRICES[i.product]??0)*i.qty)}`).join('\n')+`\n\nTOTAAL: ${euro(total)}\n\nGEGEVENS\n`+Object.entries(a).map(([k,v])=>`${k}: ${v}`).join('\n');sum.textContent=txt;document.getElementById('orderMessage').value=txt}
 let params=new URLSearchParams(location.search),sub=params.get('onderwerp');if(sub&&document.getElementById('subject'))document.getElementById('subject').value=sub;
 addEventListener('scroll',()=>document.querySelector('header')?.classList.toggle('scrolled',scrollY>20),{passive:true});
+
+
+// Mobile navigation
+const menuToggle=document.querySelector('.menu-toggle');
+const mobileNav=document.querySelector('header .nav');
+if(menuToggle&&mobileNav){
+  menuToggle.addEventListener('click',()=>{
+    const open=mobileNav.classList.toggle('open');
+    menuToggle.classList.toggle('open',open);
+    menuToggle.setAttribute('aria-expanded',String(open));
+    menuToggle.setAttribute('aria-label',open?'Menu sluiten':'Menu openen');
+  });
+  mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    mobileNav.classList.remove('open');menuToggle.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Menu openen');
+  }));
+}
